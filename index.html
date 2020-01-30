@@ -1,0 +1,26 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <iframe name="efPcsResume" id="efPcsResume" src="https://event.dev.eightfold.ai/careers/resume/embed" title="resume" style="z-index: 100000000;width :100%;height:100%;"></iframe>
+</body>
+<script type='text/javascript'>
+
+  //Resume Embedded Config
+  var resumeEmbedConfig = {
+    visibilityConfig : {
+        showHeader : true,
+    },
+    textConfig : {
+      headerText : 'Upload your resume and see jobs that match your skills and experience',
+      ctaText : 'Drop Resume Here',
+      selectionText : 'Select File'
+    },
+    cssConfigUrl : encodeURIComponent(window.location.origin + '/embed/css/config.css')
+  };
+
+ // js snippet for handling  configuration options
+  !function(){if(resumeEmbedConfig){var e=document.getElementById("efPcsResume").src;document.getElementById("efPcsResume").src=e+"?config="+JSON.stringify(resumeEmbedConfig)}}();
+</script>
+</html>
